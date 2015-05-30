@@ -332,4 +332,4 @@ if __name__ == '__main__':
         del sys.argv[1]
         main()
     else:
-        main(default_config=os.path.expanduser("~/.tvnamer.json"))
+        main(default_config=os.path.join(os.environ["XDG_CONFIG_HOME"], "tvnamer.json"))
